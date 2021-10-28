@@ -6,7 +6,7 @@ var {Student} = require('../models/student');
 
 
 mongoose.connect(
-  'mongodb+srv://app_user:app_user_123@cluster0.6kqdu.mongodb.net/authdb?retryWrites=true&w=majority'
+  process.env.MONGO_CRED
 );
 
 /* GET home page. */
