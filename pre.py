@@ -3,7 +3,8 @@ from dash import dcc, html
 
 app = dash.Dash(__name__)
 
-# server = app.server
+# required for gnuicorn
+server = app.server
 
 app.layout = html.Div([
     html.H2('Test deployment')
